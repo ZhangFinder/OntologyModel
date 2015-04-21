@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+  
+    <package name="usermanage" extends="struts-default">
+       <action name="addUser" class="com.ssh.web.UsersAction" method="addUser">
+          <result name="success" type="redirect">/listUser.action</result>
+          <result name="error">/error.jsp</result>
+       </action>
+        <action name="editUser" class="com.ssh.web.UsersAction" method="editUser">
+          <result name="success">/user_edit.jsp</result>
+          <result name="error">/error.jsp</result>
+       </action>
+       <action name ="listUser" class="com.ssh.web.UsersAction" method="listUser">
+           <result name="success">/listUser.jsp</result>
+            <result name="error">/error.jsp</result>
+       </action>
+       <action name="login" class="com.ssh.web.UsersAction" method="login">
+           <result name="success">/welcome.jsp</result>
+           <result name="input">/login.jsp</result>
+           <result name="error">/error.jsp</result>
+       </action>  
+        <action name="register" class="com.ssh.web.UsersAction" method="register">
+           <result name="success">/registerSuccess.jsp</result>
+           <result name="error">/error.jsp</result>
+       </action>  
+        <action name="delUser" class="com.ssh.web.UsersAction" method="delUser">
+           <result name="success">/delUserSuccess.jsp</result>
+           <result name="error">/error.jsp</result>
+       </action>  
+        <action name="updateUser" class="com.ssh.web.UsersAction" method="updateUser">
+          <result name="success">/updateUserSuccess.jsp</result>
+          <result name="error">/error.jsp</result>
+       </action>
+    </package>
+</struts>    

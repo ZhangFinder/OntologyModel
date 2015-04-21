@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Ontology_assembly_model"
+  id="myeclipse.1426675789277"
+  context-root="/Ontology_assembly_model"
+  j2ee-spec="5.0"
+  archive="Ontology_assembly_model.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+
